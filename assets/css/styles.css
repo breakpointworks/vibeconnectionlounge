@@ -281,12 +281,6 @@ small, .label {
 
 }
 
-@media (max-width: 767px) {
-  .lesson-title { font-size: 2rem; }
-  .lesson-subtitle { font-size: 1rem; }
-  .lesson-heading { font-size: 1.5rem; }
-}
-
 @media (max-width: 991px) {
   :root {
     --fs-h1: 40px;
@@ -297,6 +291,9 @@ small, .label {
   }
   .hero h1 { font-size: 2.2rem; }
   .hero p { font-size: 1rem; }
+  .lesson-title { font-size: 2rem; }
+  .lesson-subtitle { font-size: 1rem; }
+  .lesson-heading { font-size: 1.5rem; }
 }
 
 @media (max-width: 767px) {
@@ -307,8 +304,17 @@ small, .label {
     --fs-body: 15px;
     --fs-small: 12px;
   }
-  .hero { padding: 30px 15px; height: auto; }
+  .hero {
+    padding: 30px 15px;
+  }
   .hero h1 { font-size: 1.8rem; }
   .hero p { font-size: 0.95rem; }
   .cta-btn { padding: 10px 20px; }
+  .lesson-video-wrapper video {
+    width: 100%;
+    max-height: 60vh;
+  }
+  .lesson-card {
+    width: 100%;
+  }
 }
